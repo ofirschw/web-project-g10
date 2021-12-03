@@ -13,8 +13,12 @@
         <nav>
             <div class="topnav">
                 <a  href="home.html">עמוד הבית</a>
-                <a href="course.html">יחידות לימוד</a>
-                <a href="forum.html">פורום</a>
+                            <a onclick="myFunction()" class="dropbtn"><i class="arrow down"></i>קורסים </a>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="course1.html">קורס מספר 1</a>
+                        <a href="#about">קורס מספר 2</a>
+                        <a href="#contact">קורס מספר 3</a>
+                      </div>
                 <a href="About%20us.html">אודות האתר</a>
                 <a href="Q&A.html">Q&A</a>
                 <a href="Contact.html">צור קשר</a>
@@ -102,12 +106,12 @@
                             האמור לעיל נמצא תחת סמכות השיפוט הבלעדי של החוק הישראלי תוך שימוש במערכת
                             בתי המשפט הישראליים בלבד במחוז תל אביב
                     </div>
-                    <p><input type="checkbox" id="check" name="check"> By creating an account you agree to our <a href="usage-terms-example-pdf.pdf" download style="font-size: 15px">Terms & Privacy</a>.</p>
-                    <button type="submit" class="registerbtn" onclick="registeredFunction()" >Register</button>
+                    <p><input type="checkbox" id="check" name="check"> על ידי סימון וי בתיבה שמשאל את/ה מאשר את התקנון <a href="usage-terms-example-pdf.pdf" download style="font-size: 15px">תנאים ופרטיות</a>.</p>
+                    <button type="submit" class="registerbtn" onclick="registeredFunction()" >הרשם כאן ועכשיו</button>
 
                   </div>
                   <div class="container signin">
-                    <p>Already have an account? <a href="#">Sign in</a>.</p>
+                    <p>יש לך כבר חשבון ?<a href="signin.html">הכנס כאן</a></p>
                   </div>
                 </form>
             </div>

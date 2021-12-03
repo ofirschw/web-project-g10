@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Sign in</title>
+            <link rel="stylesheet" href="project.css">
+            <script src="project.js"></script>
+</head>
+<body>
+    <div class="signin">
+        <nav>
+            <div class="topnav">
+                <a  href="home.html">עמוד הבית</a>
+                            <a onclick="myFunction()" class="dropbtn"><i class="arrow down"></i>קורסים </a>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="course1.html">קורס מספר 1</a>
+                        <a href="#about">קורס מספר 2</a>
+                        <a href="#contact">קורס מספר 3</a>
+                      </div>
+                <a href="About%20us.html">אודות האתר</a>
+                <a href="Q&A.html">Q&A</a>
+                <a href="Contact.html">צור קשר</a>
+                  <a href="Registered.html">הרשמה</a>
+            </div>
+               <a class="logo.a" href="home.html"><img class="logo" src="logo.png" alt="LOGO" width="145" height="140" > </a>
+        </nav>
+
+            <div class = "form_registered">
+                <form>
+                  <div class="container">
+                    <h1 style="text-align: center">התחבר אל האתר</h1>
+                    <p style="text-align: center">אנא מלא את הפרטים בכדי להתחבר</p>
+                    <hr>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email_registered" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required minlength="6">
+                    <hr>
+                    <button type="submit" class="registerbtn" onclick="registeredFunction()" >הכנס אל המערכת</button>
+
+                  </div>
+                  <div class="container signin">
+                    <p>אם שכחת את הסיסמא<a href="Contact.html"> שלח לנו מייל</a></p>
+                  </div>
+                </form>
+            </div>
+
+    </div>
+
+</body>
+</html>

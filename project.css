@@ -41,7 +41,7 @@ body {
   font-family: Calibri;
 }
 
-.topnav  {
+.topnav   {
   overflow: hidden;
   margin-left: 30px;
   display: inline;
@@ -440,3 +440,110 @@ input#email_registered:focus, input#psw-repeat:focus ,input#psw:focus{
     height:120px;width:100%;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;
 }
 
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.show {display: block;}
+
+div#myDropdown {
+    width: 0;
+    right: 210px;
+    top: 99px;
+    background-color: white;
+    width: 180px
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+a.dropbtn {
+    padding-left: 0px;
+    padding-bottom: 0px;
+}
+
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+    border-style: solid;
+}
+
+.php {
+    width: 60%; background-color: #2b6777;    border-radius: 10px;
+
+}
+
+.watched {
+    border-style: solid;
+    padding: 0px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 4px;
+
+}
+
+.welcomecourse1{
+      grid-area: 2 / 1/  3/  5;
+
+
+}
+.bar{
+  grid-area: 3 / 1/  3/  4;
+    margin-left: 50px;
+}
+
+.towatch{
+  grid-area:4 / 2/  7/  4;
+    margin-left: 450px;
+        border-style: solid;
+    text-align: right;
+    margin-left: 0px;
+        border-radius: 10px;
+
+
+}
+
+.watchnow{
+     grid-area: 4 / 1/  7/  2;
+    margin-left: 450px;
+        border-style: solid;
+        border-radius: 10px;
+    margin-left: 50px;
+
+}
