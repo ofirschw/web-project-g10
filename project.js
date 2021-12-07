@@ -32,23 +32,6 @@ function scrollFunction() {
 }
 
 
-function registeredFunction() {
-    const mail = document.getElementById("email_registered");
-    if (!mail.checkValidity()) {
-        document.getElementById("demo").innerHTML = mail.validationMessage;
-    } else {
-        document.getElementById("demo").innerHTML = "Input OK";
-    }
-    const psw = document.getElementById("subject");
-    if (!inpObj3.checkValidity()) {
-        document.getElementById("demo3").innerHTML = text.validationMessage;
-    } else {
-        document.getElementById("demo3").innerHTML = "Input OK";
-    }
-
-}
-
-
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
