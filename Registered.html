@@ -34,14 +34,12 @@
                     <p style="text-align: center">אנא מלא טופס זה על מנת לבצע את הרישום</p>
                     <hr>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" id="email_registered" required>
+                    <label for="email_registered"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email_registered" required >
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required minlength="6">
+                    <label for="psw"><b>Password (8-10 using only english letters) </b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" pattern="[A-Za-z]{8,10}" required>
 
-                    <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required minlength="6">
                     <hr>
                       <div class="terms">
                                                   1 קדימון
@@ -106,13 +104,14 @@
                             האמור לעיל נמצא תחת סמכות השיפוט הבלעדי של החוק הישראלי תוך שימוש במערכת
                             בתי המשפט הישראליים בלבד במחוז תל אביב
                     </div>
-                    <p><input type="checkbox" id="check" name="check"> על ידי סימון וי בתיבה שמשאל את/ה מאשר את התקנון <a href="usage-terms-example-pdf.pdf" download style="font-size: 15px">תנאים ופרטיות</a>.</p>
-                    <button type="submit" class="registerbtn" onclick="registeredFunction()" >הרשם כאן ועכשיו</button>
+                    <p><input type="checkbox" id="check" name="check" required> על ידי סימון וי בתיבה שמשאל את/ה מאשר את התקנון <a href="usage-terms-example-pdf.pdf" download style="font-size: 15px">תנאים ופרטיות</a>.</p>
+                    <button type="submit" class="registerbtn" >הרשם כאן ועכשיו</button>
 
                   </div>
                   <div class="container signin">
-                    <p>יש לך כבר חשבון ?<a href="signin.html">הכנס כאן</a></p>
+                    <p>יש לך כבר חשבון ?<a href="signin.html">הכנס כאן</a>
                   </div>
+                  <div><p>                            </p></div>
                 </form>
             </div>
 

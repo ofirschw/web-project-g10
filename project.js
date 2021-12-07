@@ -31,15 +31,15 @@ function scrollFunction() {
   }
 }
 
+
 function registeredFunction() {
-    const name = document.getElementById("psw");
-    if (!name.checkValidity()) {
-        document.getElementById("demo").innerHTML = name.validationMessage;
+    const mail = document.getElementById("email_registered");
+    if (!mail.checkValidity()) {
+        document.getElementById("demo").innerHTML = mail.validationMessage;
     } else {
         document.getElementById("demo").innerHTML = "Input OK";
     }
-
-    const text = document.getElementById("subject");
+    const psw = document.getElementById("subject");
     if (!inpObj3.checkValidity()) {
         document.getElementById("demo3").innerHTML = text.validationMessage;
     } else {
