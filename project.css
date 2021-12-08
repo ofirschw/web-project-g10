@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-areas:
     "nav nav nav"
-    "section section section"
+    "section f section"
     "footer footer footer";
 	grid-gap: 4px;
     height: 360px;
@@ -396,7 +396,7 @@ text-align: center;}
 .form_registered{
   grid-area: 2 / 1/  2/  5;
     width: 60%;
-    margin-left: 450px;
+    margin-left: 22%;
 }
 
 .container {
@@ -512,8 +512,15 @@ a.dropbtn {
 }
 
 .course1{
+    margin-right:5%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-areas:
+    "bar bar bar bar "
+    "watchnow  watchnow towatch towatch"
+    "watchnow  watchnow towatch towatch"
+    "watchnow  watchnow towatch towatch"
+    "watchnow  watchnow towatch towatch"
+    "watchnow  watchnow towatch towatch";
     grid-gap: 4px;
 
 }
@@ -524,26 +531,77 @@ a.dropbtn {
 
 }
 .bar{
-  grid-area: 3 / 1/  3/  4;
-    margin-left: 50px;
+    grid-area:bar ;
+    margin-left: 5%;
 }
 
 .towatch{
-  grid-area:4 / 2/  7/  4;
-    margin-left: 450px;
+    grid-area: towatch;
         border-style: solid;
     text-align: right;
-    margin-left: 0px;
         border-radius: 10px;
-
+padding-right: 5%;
 
 }
 
 .watchnow{
-     grid-area: 4 / 1/  7/  2;
-    margin-left: 450px;
+    grid-area: watchnow;
+    margin-left: 5.5%;
         border-style: solid;
         border-radius: 10px;
-    margin-left: 50px;
+}
+
+@media (min-width: 1200px) {
+    .mobile-container{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .topnav{
+        display: none;
+    }
+ .mobile-container {
+  margin: 30px;
+
+  color: black;
+   width: 130px;
+     text-align: center;
+  border-radius: 10px;
+    position: fixed;
+     left: 71%;
+      display: inline;
+}
+
+.phonenav {
+  overflow: hidden;
+  position: relative;
+}
+
+.phonenav #myLinks {
+  display: none;
+    background: white;
+}
+
+.phonenav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+     color: black;
+}
+
+.phonenav a.icon {
+  display: block;
+  right: 0;
+  top: 0;
+}
+
+.phonenav a:hover {
+  background-color: #c8d8e4;
+}
 
 }
+

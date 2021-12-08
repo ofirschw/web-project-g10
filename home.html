@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Home page</title>
             <link rel="stylesheet" href="project.css">
@@ -27,13 +28,29 @@
                   <a href="Registered.html">הרשמה</a>
 
             </div>
+            <div class="mobile-container">
+            <!-- Top Navigation Menu -->
+            <div class="phonenav">
+              <div id="myLinks">
+                    <a  href="home.html">עמוד הבית</a>
+                <a href="course1.html">קורסים</a>
+                 <a href="About%20us.html">אודות האתר</a>
+                <a href="Q&A.html">Q&A</a>
+                  <a href="Contact.html">צור קשר</a>
+                    <a href="Registered.html">הרשמה</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="phoneFunctionnav()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            </div>
         </nav>
-        <section class="section_home"><br><br><br><p id="amir-welcome">הקורסים של עמיר נהרי</p><hr style="width:10%; display: flex; margin-left: 850px;
-            align-items: center; border: 1px solid ;border-radius: 5px;"><br><a href="course.html"><button id="button-start" type="button"><i class="arrow left"></i>לחץ כאן כדי להתחיל</button> </a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section class="section_home"><br><br><br><p id="amir-welcome">הקורסים של עמיר נהרי</p><hr style="width:10%; display: flex; margin-left:45% !important; margin-right:25% !important;
+            align-items: center; border: 1px solid ;border-radius: 5px;"><br><a href="signin.html"><button id="button-start" type="button"><i class="arrow left"></i>לחץ כאן כדי להתחיל</button> </a> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </section>
 
         <div class="home-about">
-            <h1><strong>?אנחנו יודעים מה עובר לך עכשיו בראש למה שארכוש קורס לשיווק דיגיטלי בפייסבוק</strong></h1>
+            <h1><strong>?אנחנו יודעים מה עובר לך עכשיו בראש למה שאעשה קורסים של עמיר נהרי</strong></h1>
               <p id="home-about">.הרי אם אני רוצה קורס פרונטלי וארוך אז יש לי מכללות שמלמדות את החומרים האלו <br>
                   .אם אני רוצה דווקא משהו בקטנה אני פשוט אחפש ביוטיוב<br>
                 ?אז למה לקחת את הקורס שלנו
@@ -116,7 +133,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-
         <footer class="footer_regular">
             <div class = footer >
                 <a href="Contact.html">צור קשר</a>

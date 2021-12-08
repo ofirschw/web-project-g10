@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Home page</title>
@@ -9,7 +10,6 @@
             <script src="project.js"></script>
 </head>
 <body>
-    <div class="course1">
         <nav>
          <a class="logo.a" href="home.html"><img class="logo" src="logo.png" alt="LOGO" width="145" height="140" > </a>
             <div class="topnav">
@@ -23,40 +23,53 @@
                 <a href="About%20us.html">אודות האתר</a>
                 <a href="Q&A.html">Q&A</a>
                 <a href="Contact.html">צור קשר</a>
-                  <a href="Registered.html">הרשמה</a>
+                <a href="Registered.html">הרשמה</a>
+            </div>
 
+         <div class="mobile-container">
+            <!-- Top Navigation Menu -->
+            <div class="phonenav">
+              <div id="myLinks">
+                  <a  href="home.html">עמוד הבית</a>
+                  <a href="course1.html">קורסים</a>
+                  <a href="About%20us.html">אודות האתר</a>
+                  <a href="Q&A.html">Q&A</a>
+                  <a href="Contact.html">צור קשר</a>
+                  <a href="Registered.html">הרשמה</a>
+              </div>
+                <a href="javascript:void(0);" class="icon" onclick="phoneFunctionnav()"><i class="fa fa-bars"></i></a>
+             </div>
             </div>
         </nav>
-        <div class="welcomecourse1"> <h1 style="text-align: center"> ברוכים הבאים לקורס מספר 1, מזמינים אתכם להנות מהתוכן</h1></div>
 
+
+        <div class="welcomecourse1"> <h1 style="text-align: center"> ברוכים הבאים לקורס מספר 1, מזמינים אתכם להנות מהתוכן</h1></div>
+        <div class="course1">
         <div class="bar">
             <br>
-
-                <div class="watched">
-                  <div class="skills php">60% נצפו עד כה</div>
-                </div></div>
-        <div class = "watchnow">
-            <h2 style="text-align: right";> :מתנגן כעת </h2>
-
-            <video width="752" controls >
-  <source src="video.mp4" type="video/mp4">
-            </video> </div>
-
-
-        <div class = "towatch">
-                <h2>רשימת תוכן א</h2>
-            <h3> 1.סרטון 1</h3>
-            <h3> 2.סרטון 3</h3>
-            <h3> 3.סרטון 2</h3>
-          <h2>רשימת תוכן ב</h2>
-            <h3> 1.סרטון 1</h3>
-            <h3> 2.סרטון 3</h3>
-            <h3> 3.סרטון 2</h3>
+          <div class="watched">
+             <div class="skills php">60% נצפו עד כה</div>
+          </div>
         </div>
 
+        <div class = "watchnow">
+            <h2 style="text-align: right";> :מתנגן כעת </h2>
+            <video width="60%" controls >
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
 
-
-
+         <div class = "towatch">
+            <h2>רשימת תוכן א</h2>
+            <h3> 1.סרטון 1</h3>
+            <h3> 2.סרטון 3</h3>
+            <h3> 3.סרטון 2</h3>
+            <h2>רשימת תוכן ב</h2>
+            <h3> 1.סרטון 1</h3>
+            <h3> 2.סרטון 3</h3>
+            <h3> 3.סרטון 2</h3>
+         </div>
+        </div>
         <footer class="footer_regular">
             <div class = footer >
                 <a href="Contact.html">צור קשר</a>
@@ -65,6 +78,5 @@
                 <a href="Q&A.html">Q&A</a>
             </div>
         </footer>
-    </div>
 </body>
 </html>

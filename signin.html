@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Sign in</title>
@@ -25,22 +26,38 @@
                   <a href="Registered.html">הרשמה</a>
             </div>
                <a class="logo.a" href="home.html"><img class="logo" src="logo.png" alt="LOGO" width="145" height="140" > </a>
+                        <div class="mobile-container">
+            <!-- Top Navigation Menu -->
+            <div class="phonenav">
+              <div id="myLinks">
+                    <a  href="home.html">עמוד הבית</a>
+                <a href="course1.html">קורסים</a>
+                 <a href="About%20us.html">אודות האתר</a>
+                <a href="Q&A.html">Q&A</a>
+                  <a href="Contact.html">צור קשר</a>
+                    <a href="Registered.html">הרשמה</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="phoneFunctionnav()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+            </div>
         </nav>
 
             <div class = "form_registered">
-                <form>
+                <form method="get" action="/TODO">
                   <div class="container">
                     <h1 style="text-align: center">התחבר אל האתר</h1>
                     <p style="text-align: center">אנא מלא את הפרטים בכדי להתחבר</p>
                     <hr>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" id="email_registered" required>
+                    <label for="email_registered"><b>Email</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email_registered" required >
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required minlength="6">
+                    <label for="psw"><b>Password (8-10 using only english letters) </b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" pattern="[A-Za-z]{8,10}" required>
                     <hr>
-                    <button type="submit" class="registerbtn" onclick="registeredFunction()" >הכנס אל המערכת</button>
+                    <button type="submit" class="registerbtn" >הכנס אל המערכת</button>
 
                   </div>
                   <div class="container signin">
@@ -48,6 +65,15 @@
                   </div>
                 </form>
             </div>
+                <footer class="footer_about" >
+            <div class="footer">
+              <a href="Contact.html">צור קשר</a>
+                <a href="usage-terms-example-pdf.pdf" >תקנון האתר</a>
+                <a href="About%20us.html">אודות האתר</a>
+                <a href="Q&A.html">Q&A</a>
+            </div>
+        </footer>
+
 
     </div>
 
